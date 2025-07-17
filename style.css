@@ -1,0 +1,110 @@
+
+body{height:90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #121212;
+}
+.container{
+   margin-top: 50px;
+    height: 10vw;
+    width: 60vw;
+    border: 2px solid black;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  background-color: white;
+    border-radius: 70px;
+}
+
+#a{height: 7vw;
+width: 7vw;
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: white;
+border:8px solid #B6F500;
+border-bottom:8px solid #4b0082;
+border-radius: 50%;
+animation: first 3s linear 0s infinite normal; /*If you want the inner div to remain fixed then rotate in opposite dir. with same duration of animation*/
+margin:15px 0px 5px 14px ;   
+}
+#loader1{
+    animation: loader1 3s linear 0s infinite normal;
+    color:rgb(222, 180, 11);
+    }
+
+@keyframes first{
+    from{}
+    to{ transform: rotate(360deg);}
+}
+@keyframes loader1{
+    from{}
+    to{transform: rotate(-360deg) scale(1.2);
+   }
+}
+#b{height: 7vw;
+width: 7vw;
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: white;
+border:8px solid transparent;
+border-bottom:8px dotted #FF3F33;
+border-radius: 50%;
+animation: second 2.5s linear 0s infinite normal; /*If you want the inner div to remain fixed then rotate in opposite dir. with same duration of animation*/
+margin:15px 0px 5px 14px ;  
+}
+#loader2{
+   animation: loader2 2.5s linear 0s infinite normal;
+   color:green;
+   font-weight: 700;
+}
+@keyframes second{
+   from{}
+   to{transform: rotate(360deg) ;}
+}
+@keyframes loader2 {
+   from{}
+   to{transform: rotate(-360deg) scaleX(-1);}
+}
+#c{height: 7vw;
+width: 7vw;
+display: flex;
+justify-content: center;
+background-color: white;
+border:3px solid transparent;
+border-bottom:6px solid blue;
+border-top:6px solid blue;
+border-radius: 50%;
+margin:15px 0px 5px 14px ; 
+animation: third 1.8s linear 0s infinite normal; 
+}
+#loader3{
+height: 6.3vw;
+width: 6.3vw;
+display: flex;
+justify-content: center;
+align-items: center;
+border: 2px solid transparent;
+border-top: 4px solid red;
+border-bottom: 4px solid red;
+border-radius: 50%;
+animation: loader3 1.8s linear 0s infinite normal; 
+}
+#text{
+   font-weight: 700;
+   animation: text 1.8s linear 0s infinite normal;
+}
+@keyframes third{
+   from{}
+   to{transform: rotate(360deg);}
+}
+@keyframes loader3{
+   from{transform: rotate(0deg);}
+   to{transform: rotate(-720deg);}
+}
+@keyframes text{
+   from{}
+   to{transform: rotate(360deg);}
+}
